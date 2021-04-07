@@ -1,0 +1,13 @@
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		LinkedDeque<Integer> deq = new LinkedDeque<>();
+		System.out.println("empty? " + deq.isEmpty() + " (true)");
+		deq.addToFront(3);
+		deq.addToFront(2);
+		deq.addToFront(1);
+		System.out.println("empty? " + deq.isEmpty() + " (false)");
+	}
+	
+}

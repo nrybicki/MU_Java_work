@@ -1,0 +1,84 @@
+
+public class LinkedDeque<T> implements DequeInterface<T> {
+	// ==================== Properties ====================
+	private Node<T> firstNode;
+	
+	
+	// ==================== Constructors ====================
+	public LinkedDeque() {
+		
+	}
+	
+	// ==================== Methods ====================
+	@Override
+	public void addToFront(T item) {
+	}
+
+	@Override
+	public void addToBack(T item) {
+	}
+
+	@Override
+	public T removeFront() {
+		// if deque is empty, throw NoSuchElementException
+		return null;
+	}
+
+	@Override
+	public T removeBack() {
+		// if deque is empty, throw NoSuchElementException
+		return null;
+	}
+
+	@Override
+	public T getFront() {
+		// if deque is empty, throw NoSuchElementException
+		return null;
+	}
+
+	@Override
+	public T getBack() {
+		// if deque is empty, throw NoSuchElementException
+		return null;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return this.firstNode == null;
+	}
+
+	@Override
+	public void clear() {
+		this.firstNode = null;
+	}
+	
+	public String toString() {
+		String str = "FRONT-TO-BACK: [" + this.firstNode.data;
+		Node<T> curr = this.firstNode.next;
+		
+		while (curr != this.firstNode) {
+			str += " " + curr.data;
+			curr = curr.next;
+		}
+		
+		str += "], BACK-TO-FRONT: [" + this.firstNode.previous.data;
+		curr = this.
+		
+		return str;
+	}
+	
+	
+	// ==================== Inner Node Class ====================
+	private class Node<E> {
+		private E data;
+		private Node<E> previous;
+		private Node<E> next;
+		
+		private Node(E data) {
+			this.data = data;
+			this.previous = null;
+			this.next = null;
+		}
+	}
+
+}

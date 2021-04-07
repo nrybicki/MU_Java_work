@@ -1,0 +1,4 @@
+
+public class DequeQueue implements QueueInterface<T> {
+
+}

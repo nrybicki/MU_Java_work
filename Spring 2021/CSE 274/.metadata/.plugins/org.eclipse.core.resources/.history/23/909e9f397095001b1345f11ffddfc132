@@ -1,0 +1,40 @@
+
+public class DequeStack<T> implements StackInterface<T> {
+	// ==================== Properties ====================
+	private LinkedDeque<T> deque;
+	
+	// ==================== Constructors ====================
+	public DequeStack() {
+		deque = new LinkedDeque<T>();
+	}
+	
+	// ==================== Methods ====================
+	@Override
+	public void push(T item) {
+		
+	}
+	
+	@Override
+	public T pop() {
+		
+		return null;
+	}
+	
+	@Override
+	public T peek() {
+		
+		return null;
+	}
+	
+	@Override
+	public boolean isEmpty() {
+		
+		return false;
+	}
+	
+	@Override
+	public void clear() {
+		
+	}
+	
+}

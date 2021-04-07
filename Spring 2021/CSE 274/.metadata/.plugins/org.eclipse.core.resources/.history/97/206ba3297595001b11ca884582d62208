@@ -1,0 +1,42 @@
+/**
+ * 
+ * @author Nick Rybicki
+ *
+ * @param <T>
+ */
+public class DequeQueue<T> implements QueueInterface<T> {
+	// ==================== Properties ====================
+	private LinkedDeque<T> queue;
+	
+	// ==================== Constructors ====================
+	public DequeQueue() {
+		queue = new LinkedDeque<T>();
+	}
+	
+	// ==================== Methods ====================
+	@Override
+	public void add(T newEntry) {
+		queue.addToBack(newEntry);
+	}
+
+	@Override
+	public T remove() {
+		return queue.removeFront();
+	}
+
+	@Override
+	public T peek() {
+		return queue.getFront();
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return queue.isEmpty();
+	}
+
+	@Override
+	public void clear() {
+		queue.clear();
+	}
+
+}

@@ -1,0 +1,4 @@
+
+public class DequeStack implements StackInterface<T> {
+
+}

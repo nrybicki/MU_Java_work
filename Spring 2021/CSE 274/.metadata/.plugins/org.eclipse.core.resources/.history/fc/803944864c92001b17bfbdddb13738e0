@@ -1,0 +1,9 @@
+
+public class BinaryNode {
+	int data;
+	BinaryNode left;
+	BinaryNode right;
+	
+	
+	
+}

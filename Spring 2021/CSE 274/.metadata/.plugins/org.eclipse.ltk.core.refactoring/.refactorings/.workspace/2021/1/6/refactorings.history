@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;2020-01-29_Project-01_BigInt&apos; to &apos;2020-02-07_Project-01_BigInt&apos;&#x0D;&#x0A;- Original element: &apos;2020-01-29_Project-01_BigInt&apos;&#x0D;&#x0A;- Renamed element: &apos;2020-01-29_Project-01_BigInt&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;2020-01-29_Project-01_BigInt&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=2020-01-29_Project-01_BigInt" name="2020-02-07_Project-01_BigInt" references="true" stamp="1612135172896" version="1.0"/>
+</session>

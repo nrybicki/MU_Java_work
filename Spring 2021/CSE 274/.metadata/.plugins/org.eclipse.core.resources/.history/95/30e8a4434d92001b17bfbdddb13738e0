@@ -1,0 +1,15 @@
+
+public class Tester {
+	
+	public static void main(String[] args) {
+		BinaryNode root = new BinaryNode(5);
+		System.out.println(root.data); // 5
+		System.out.println(root.left); // null
+		System.out.println(root.right); // null
+		
+		root.left = new BinaryNode(99);
+		System.out.println(root.left.data);
+		
+	}
+	
+}
