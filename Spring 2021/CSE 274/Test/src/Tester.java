@@ -1,10 +1,5 @@
 import java.awt.Point;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.PriorityQueue;
-import java.util.Queue;
-import java.util.Random;
-import java.util.Stack;
+import java.util.*;
 
 public class Tester {
 	
@@ -12,33 +7,26 @@ public class Tester {
 	
 	public static void main(String[] args) {
 		
-		Queue<String> myQueue = new LinkedList<>();
-		myQueue.add("Jane");
-		myQueue.add("Jess");
-		myQueue.add("Jill");
-		myQueue.add(myQueue.remove());
-		myQueue.add(myQueue.peek());
-		myQueue.add("Jim");
-		String name = myQueue.remove();
-		myQueue.add(myQueue.peek());
-		
-		while (!myQueue.isEmpty()) {
-			System.out.print(myQueue.remove() + " ");
+		Point a = new Point(5, 12);
+		Point b = new Point(3, 0);
+		Point c = new Point(10, 11);
+		Point d = new Point(4, 7);
+
+		Comparator<Point> cmp = new Comparator<Point>() {
+		   public int compare(Point p1, Point p2) {
+		      return p2.y - p1.y;
+		   }
+		};
+
+		PriorityQueue<Point> q= new PriorityQueue<Point>(cmp);
+		q.add(a);
+		q.add(b);
+		q.add(c);
+		q.add(d);
+
+		while (!q.isEmpty()) {
+		   System.out.println(q.remove());
 		}
-		System.out.println();
-		
-		Deque<String> deq = new LinkedList<>();
-		deq.add(null);
-		System.out.println(deq.remove());
-		
-//		PriorityQueue<String> pq = new PriorityQueue<>();
-//		pq.add(null);
-		
-		Stack<String> s = new Stack<>();
-		s.push(null);
-		System.out.println(s.pop());
-		System.out.println(s.pop());
-		
 		
 		
 		

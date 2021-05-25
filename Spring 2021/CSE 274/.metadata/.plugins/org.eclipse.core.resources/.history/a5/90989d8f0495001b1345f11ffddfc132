@@ -1,9 +1,0 @@
-
-public class Tester {
-	
-	public static void main(String[] args) {
-		LinkedDeque<Integer> deq = new LinkedDeque<>();
-		System.out.println("empty? " + deq.isEmpty() + " (true)");
-	}
-	
-}
